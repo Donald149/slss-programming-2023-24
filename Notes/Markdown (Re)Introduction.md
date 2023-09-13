@@ -1,3 +1,10 @@
+---
+tags:
+  - notes
+  - slss
+  - y2023
+  - programming-level-1
+---
 
 # Headings
 We create headings in Markdown using hash (#) symbols
@@ -92,7 +99,7 @@ e.g.
 | Name        | Age          | Sign           |
 | ---         | ---          | ---            |
 | person      | unknown      | sign           |
-| Donald      | 15           | Scorpio        |
+| Donald      | young        | Scorpio        |
 | Your name   | Your age     | Your sign      |
 
 

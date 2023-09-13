@@ -115,7 +115,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -147,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "212038dc0efa8bb0",
+  "active": "04794f2a38177d57",
   "lastOpenFiles": [
     "Markdown (Re)Introduction.md"
   ]
