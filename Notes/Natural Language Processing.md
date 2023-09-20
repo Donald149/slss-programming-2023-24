@@ -14,7 +14,7 @@ We use the `print()` function to display output
 print("Your text goes in here.")
 ```
 
-## [[Headers]]
+# [[Headers]]
 
 ## Comments
 Comments are pieces of text that are *not* interpreted by Python
@@ -51,6 +51,7 @@ favorite_food = input("What is your favorite food? ")
 What you can do:
 1. name them with letters, numbers, underscores
 2. names **should** start with a lowercase letter
+  
 What you can't do:
 1. you **can't** name them with spaces or symbols
 2. you **can't** name them with certain words that are reserved
