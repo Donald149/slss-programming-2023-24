@@ -43,8 +43,33 @@ Variables allow us to **store** information for the time that our app is running
 ```python
 favorite_food = input("What is your favorite food? ")
 ```
-`favorite_food` -> name of the variable
-`=` -> assignment operator
-`input...` -> value
+`favorite_food` -> name of the variable  
+`=` -> assignment operator  
+`input...` -> value  
 
+### Naming
+What you can do:
+1. name them with letters, numbers, underscores
+2. names **should** start with a lowercase letter
+What you can't do:
+1. you **can't** name them with spaces or symbols
+2. you **can't** name them with certain words that are reserved
+	e.g. `if`, `while`, `for`, `and`, `or`, ...
+
+Good names are like this:
+```python
+fav_food
+date_of_birth
+student_number
+```
+
+Bad names are like this:
+```python
+Favorite_food
+a
+num
+aa
+aaa
+aaaa
+```
 # [[Strings]]
