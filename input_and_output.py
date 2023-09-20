@@ -11,4 +11,4 @@ print("The greater the mass, the greater the force of attraction. --Some science
 favorite_food = input("What's your favorite food? ")
 
 # Respond with something a human would say
-print(f"Cool, {favorite_food} sounds good to me.")
+print(f"Cool, I like eating {favorite_food} too.")

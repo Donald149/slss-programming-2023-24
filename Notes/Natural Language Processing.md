@@ -7,7 +7,7 @@ tags:
 ---
 # Natural Language Processing
 ## Output
-We can use a function to display text and symbols to the screen
+We can use a function to display text and symbols to the screen  
 We use the `print()` function to display output
 
 ```python
@@ -17,8 +17,8 @@ print("Your text goes in here.")
 # [[Headers]]
 
 ## Comments
-Comments are pieces of text that are *not* interpreted by Python
-This means that the text is **ignored**
+Comments are pieces of text that are *not* interpreted by Python  
+This means that the text is **ignored**  
 We use the # symbol to make comments
 
 ```python
@@ -54,7 +54,7 @@ What you can do:
   
 What you can't do:
 1. you **can't** name them with spaces or symbols
-2. you **can't** name them with certain words that are reserved
+2. you **can't** name them with certain words that are reserved  
 	e.g. `if`, `while`, `for`, `and`, `or`, ...
 
 Good names are like this:
@@ -74,3 +74,6 @@ aaa
 aaaa
 ```
 # [[Strings]]
+
+# [[Design]]
+
