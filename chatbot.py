@@ -23,20 +23,26 @@ time.sleep(2)
 print("I want to know more about you...")
 time.sleep(1)
 fav_food = input("What's your favorite food? ")
+time.sleep(1)
 
-# Make a comment about their food but have multiple dialogue options
-# Create a list of possible responsees
-list_food_dialogue = [
-    f"Oh, I've never had {fav_food} before.",
-    f"Sounds delicious, I would like to try {fav_food} one day.",
-    "Mmmm. That sounds interesting.",
-    f"Umm... you actually like eating {fav_food}?",
-    "Cool."
-]
+# If their favorite food is sushi, reply with yum.
+if fav_food == "sushi":
+    print("Yum! 🍣")
+    print("I think I love sushi!")
+elif fav_food == "burgers" or fav_food ==  "Burgers":
+    print("🍔")
+    print("Burgers are great.")
+else:
+    # Create a list of possible responsees
+    list_food_dialogue = [
+        f"Oh, I've never had {fav_food} before.",
+        f"Sounds delicious, I would like to try {fav_food} one day.",
+        "Mmmm. That sounds interesting.",
+        f"Umm... you actually like eating {fav_food}?",
+        "Cool."
+    ]
 
-# Choose one of those responses randomly
-random_food_dialogue = random.choice(list_food_dialogue)
-
-# Print out that chosen response
-time.sleep(2)
-print(random_food_dialogue)
+    # Choose one of those responses randomly
+    random_food_dialogue = random.choice(list_food_dialogue)
+    # Print out that chosen response
+    print(random_food_dialogue)
