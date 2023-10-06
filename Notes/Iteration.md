@@ -13,7 +13,7 @@ We can repeat our instructions using *iteration* or *loops*.
 
 More detailed information can be found [here](https://runestone.academy/ns/books/published/thinkcspy/Strings/TraversalandtheforLoopByItem.html). 
 
-# Iterating over a [[List]]
+# Iterating over a [[Lists|List]]
 
 Say, for example, we want to repeat instructions for all items inside of a list. Python has a way that we can do this.
 
