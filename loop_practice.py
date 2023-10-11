@@ -56,8 +56,8 @@ import time
 # print("Happy New Year!")
 
 # Method 2 (I made this up)
-for count in range(10):
-    down = 10 - count
+for i in range(10):
+    down = 10 - i
     print(down)
     time.sleep(1)
 print("Happy New Year!")
@@ -74,3 +74,14 @@ for name in names:
         break # STOPS THE LOOP
 else:
     print(f"We didn't find {search_name}.")
+
+# Print out something 20 times
+for _ in range(20):
+    print("The One Piece is REAL!!!")
+
+# Repeat something 5 times and we want to keep track of how many iterations we've completed
+for i in range(5):
+	print(i)
+     
+for i in range(10):
+    print(f"{i + 1}. You shall not pass.")
