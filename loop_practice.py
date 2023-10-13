@@ -59,7 +59,7 @@ import time
 for i in range(10):
     down = 10 - i
     print(down)
-    time.sleep(1)
+    # time.sleep(1)
 print("Happy New Year!")
 
 # Implement Linear Search
@@ -85,3 +85,23 @@ for i in range(5):
      
 for i in range(10):
     print(f"{i + 1}. You shall not pass.")
+
+# For example: can we start at another number?
+for i in range(90,100):
+    print(i)
+
+# Can we count ny any other number?
+for i in range(0,100,3):
+    print(i)
+
+# Counting backwards
+for i in range(10, 0, -1):
+    print(i)
+
+# 1. Print all even numbers between 1200 and 1500 inclusive
+for i in range(1200, 1501, 2):
+    print(i)
+
+# 2. Print all odd numbers between -150 and 0 inclusive
+for i in range(-149, 0, 2):
+    print(i)
