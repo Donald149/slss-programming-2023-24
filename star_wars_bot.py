@@ -1,4 +1,4 @@
-# Star Wars BOt
+# Star Wars Bot
 # Author: Donald
 # Date: 16 October 2023
 
