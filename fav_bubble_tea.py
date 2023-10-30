@@ -33,10 +33,10 @@ for _ in range(NUM_RESPONDENTS):
         bubqueen_likes += 1
 
 # Percentage counter
-coco_percent = coco_likes * 20
-suntea_percent = suntea_likes * 20
-chatime_percent = chatime_likes * 20
-bubqueen_percent = bubqueen_likes * 20
+coco_percent = int(coco_likes / NUM_RESPONDENTS *100)
+suntea_percent = int(suntea_likes / NUM_RESPONDENTS *100)
+chatime_percent = int(chatime_likes / NUM_RESPONDENTS *100)
+bubqueen_percent = int(bubqueen_likes /NUM_RESPONDENTS *100)
 
 # Print out a summary
 # Give the raw score AND the percentage
