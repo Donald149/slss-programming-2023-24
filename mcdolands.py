@@ -24,6 +24,6 @@ total_bill = total_bill + total_bill * tax
 
 # Response
 if(total_bill > 0):
-    print(f"Your total is {total_bill:.2f}")
+    print(f"Your total is ${total_bill:.2f}")
 else:
     print("GET OUTTA HERE IF YOU AINT ORDERING!!!")
