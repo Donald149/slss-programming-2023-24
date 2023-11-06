@@ -24,4 +24,9 @@ elif average_score >= 3:
 else:
     comment = "hmm..."
 
+if total_score % course_amount == 0:
+    average_score = int(average_score)
+else:
+    average_score = round(average_score, 2)
+
 print(f"{average_score}? {comment}")
