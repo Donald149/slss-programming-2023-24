@@ -19,3 +19,16 @@ We created the Favourite Bubble Tea service which is based on the "Popularity/Li
 N-Point rating systems are used by many services but one that nearly everyone is familiar with is Amazon's main purchasing service.
 
 This paradigm is where users rate a product out of a certain number.
+
+## Similarity Scores
+
+Amazon, Netflix, and Meta all use Similarity scores to help drive users to their platform.
+
+> Example: Amazon
+> Mr. Ubial likes ["nintendo switch", "usb chargers", "4k blu ray movies"]
+> Donald likes ["nintendo switch", "usb chargers", "manga"]
+> Doge likes ["manga", "cat food", "ball"]
+
+Similarity score between Mr. Ubial and Donald: 2
+Similarity score between Mr. Ubial and Doge: 0
+Similarity score between Donald and Doge: 1
