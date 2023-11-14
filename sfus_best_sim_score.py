@@ -25,6 +25,10 @@ profile = [
 top_sim_score = 0
 top_sim_name = ""
 
+# Initialize least similarity score
+lowest_score = 0
+lowest_name = ""
+
 with open("./data.csv") as f:
     # Throw away the header line
     header = f.readline()
@@ -53,5 +57,14 @@ with open("./data.csv") as f:
             top_sim_score = current_sim_score
             top_sim_name = current_name
 
+        # Update the lowest score if its lower
+        if current_sim_score <= lowest_score:
+            # update the lowest score
+            lowest_score = current_sim_score
+            lowest_name = current_name
+
 print("TOP SIMILAR PERSON!")
 print(f"{top_sim_name} - Score: {top_sim_score}")
+
+print("Least similar person:")
+print(f"{lowest_name} - {lowest_score}")
