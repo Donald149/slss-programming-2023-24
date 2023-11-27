@@ -33,7 +33,7 @@ def print_area_of_a_square(sidelength: float):
 
 
 print_area_of_a_square(12.2)
-# print_area_of_a_square(12)
+print_area_of_a_square(12)
 
 # Given two squares of two sidelengths
 #   12.2 and 144
@@ -60,3 +60,58 @@ def stars(star_amt: int) -> str:
 
 star_input = int(input("How many stars? "))
 print(stars(star_input))
+
+def biggest_of_three(num1: int, num2: int, num3: int) -> int:
+	"""Takes three numbers.
+	Returns the biggest of the three numbers.
+
+	Params:
+
+	num1 - 1st number,
+	num2 - 2nd number,
+	num3 - 3rd number,
+	"""
+
+	biggest_num = 0
+	number_list = [num1, num2, num3]
+
+	for number in number_list:
+		if number > biggest_num:
+			biggest_num = number
+
+	return biggest_num
+
+print("Insert three numbers:")
+input_num1 = int(input("1st number: "))
+input_num2 = int(input("2nd number: "))
+input_num3 = int(input("3rd number: "))
+print(f"The biggest number is {biggest_of_three(input_num1, input_num2, input_num3)}.")
+
+def pyramid(layers: int):
+	"""Creates a pyramid of stars.
+	
+	Params:
+
+	layers - how many layer of stars in the pyramid
+	"""
+
+	for level in range(layers):
+		print(stars(level + 1))
+
+pyramid_input = int(input("Enter amount of levels for the pyramid: "))
+pyramid(pyramid_input)
+
+def pyramid_mirror(layers: int):
+	""" Creates a pyramid of stars, but mirrored.
+
+	Params:
+
+	mirror_layers - how many layers of stars in the pyramid
+	"""
+
+	for level in range(layers):
+		reverse_space= " " * (layers - level - 1) 
+		print(f"{reverse_space}{stars(level + 1)}")
+
+mirror_input = int(input("Enter amount of levels for the mirror pyramid: "))
+pyramid_mirror(mirror_input)
