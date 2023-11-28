@@ -42,26 +42,33 @@ print_area_of_a_square(12)
 area_of_squares = area_of_a_square(12.2) + area_of_a_square(144)
 print(area_of_squares)
 
+# Question 1:
+# Create a function called stars()
+# Takes an int as a parameter
+# Returns a string of stars of given length
 
+# Aside: Signature of a function
+# 	- name of the function
+# 	- inputs/parameters /type
 
 def stars(star_amt: int) -> str:
 	"""Prints an amount of stars.
 	
 	Params:
 	
-	stars - amount of stars
+	star_amt - amount of stars
 	"""
-	
-	string = ""
-	for _ in range(star_amt):
-		string += "*"
 		
-	return string
+	return "*" * star_amt
 
 star_input = int(input("How many stars? "))
 print(stars(star_input))
 
-def biggest_of_three(num1: int, num2: int, num3: int) -> int:
+# Question 2:
+# Create a function called biggest_of_three()
+# Takes three numbers and returns the biggest one
+
+def biggest_of_three(num1: float, num2: float, num3: float) -> float:
 	"""Takes three numbers.
 	Returns the biggest of the three numbers.
 
@@ -70,6 +77,9 @@ def biggest_of_three(num1: int, num2: int, num3: int) -> int:
 	num1 - 1st number,
 	num2 - 2nd number,
 	num3 - 3rd number,
+
+	Returns:
+	The biggest of the three numbers.
 	"""
 
 	biggest_num = 0
@@ -81,11 +91,13 @@ def biggest_of_three(num1: int, num2: int, num3: int) -> int:
 
 	return biggest_num
 
-print("Insert three numbers:")
-input_num1 = int(input("1st number: "))
-input_num2 = int(input("2nd number: "))
-input_num3 = int(input("3rd number: "))
-print(f"The biggest number is {biggest_of_three(input_num1, input_num2, input_num3)}.")
+print(biggest_of_three(10, 100, 1000))
+
+# Question 3
+# Question 4
+# Create functions called pyramid() and pyramid_mirror()
+# Takes one number as the parameter
+# Creates a pyramid of that many layers
 
 def pyramid(layers: int):
 	"""Creates a pyramid of stars.
@@ -106,7 +118,7 @@ def pyramid_mirror(layers: int):
 
 	Params:
 
-	mirror_layers - how many layers of stars in the pyramid
+	layers - how many layers of stars in the pyramid
 	"""
 
 	for level in range(layers):
