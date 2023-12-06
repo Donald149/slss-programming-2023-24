@@ -20,3 +20,21 @@ def factorial(num: int) -> int:
 
 
 print(factorial(5))
+
+
+def fib(n: int) -> int:
+    """Calculate and return the nth
+    Fibonacci number.
+    
+    Params:
+        n - the nth number
+
+    Returns:
+        the nth Fibonaccci number
+    """
+    if n == 1 or n == 2:
+        return 1
+    elif n > 2:
+        return fib(n - 1) + fib(n - 2)
+    
+print(fib(10))
