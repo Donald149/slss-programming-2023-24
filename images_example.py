@@ -15,7 +15,7 @@ with Image.open("./Images/kid-green.jpg") as im:
     image_width = im.width
 
     # load background image
-    bg_im = Image.open("./IMages/beach.jpg")
+    bg_im = Image.open("./Images/beach.jpg")
 
     # outer loop is top -> bottom
     # inner loop is left -> right
