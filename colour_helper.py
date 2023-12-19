@@ -52,3 +52,15 @@ print(is_light(white_pixel))  # True
 print(is_light(light_gray_pixel))  # True
 print(is_light(dark_gray_pixel))  # False
 print(is_light(black_pixel))  # False
+
+def pixel_to_grayscale(pixel: tuple) -> tuple:
+    """Takes a pixel and return a grayscale version.
+    
+    Params:
+        pixel- 3-tuple of (red, green, blue)
+    
+    Return:
+    The grayscale
+    """
+    ave = int(sum(pixel) / len(pixel))
+    return(ave, ave, ave)
