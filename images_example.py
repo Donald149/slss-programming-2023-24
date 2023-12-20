@@ -35,31 +35,24 @@ with Image.open("./Images/kid-green.jpg") as im:
     im.save("./Images/output.jpg")
 
 with Image.open("./Images/best_pizza.jpg") as pic:
-    # store the width and height
-    pic_height = pic.height
-    pic_width = pic.width
-
-    for y in range(pic_height):
-        for x in range(pic_width):
+    # go through every pixel
+    for y in range(pic.height):
+        for x in range(pic.width):
             pixel = pic.getpixel((x, y))
 
             # check if light
             if colour_helper.is_light(pixel):
                 # replace
-                pic.putpixel((x,y), (255, 255, 255))
+                pic.putpixel((x,y), colour_helper.WHITE_PIXEL)
             else:
-                pic.putpixel((x, y), (0, 0, 0))
+                pic.putpixel((x, y), colour_helper.BLACK_PIXEL)
 
     # save
     pic.save("./Images/output_pizza.jpg")
 
 with Image.open("./Images/best_pizza.jpg") as pic_2:
-    # store the width and height
-    pic2_height = pic_2.height
-    pic2_width = pic_2.width
-
-    for y in range(pic2_height):
-        for x in range(pic2_width):
+    for y in range(pic_2.height):
+        for x in range(pic_2.width):
             pixel = pic_2.getpixel((x, y))
 
             pic_2.putpixel((x,y), colour_helper.pixel_to_grayscale(pixel))

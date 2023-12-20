@@ -5,6 +5,10 @@
 # Need help with colour?
 # This shall help you!
 
+BLACK_PIXEL = (0, 0, 0)
+DARK_GRAY_PIXEL = (127, 127, 127)
+LIGHT_GRAY_PIXEL = (128, 128, 128)
+WHITE_PIXEL = (255, 255, 255)
 
 def pixel_to_string(pixel:tuple) -> str:
     """Take a rgb 3-tuple and "interpret it"
@@ -42,16 +46,6 @@ def is_light(pixel: tuple) -> bool:
     else:
         return False
 
-black_pixel = (0, 0, 0)
-dark_gray_pixel = (127, 127, 127)
-light_gray_pixel = (128, 128, 128)
-white_pixel = (255, 255, 255)
-
-
-print(is_light(white_pixel))  # True
-print(is_light(light_gray_pixel))  # True
-print(is_light(dark_gray_pixel))  # False
-print(is_light(black_pixel))  # False
 
 def pixel_to_grayscale(pixel: tuple) -> tuple:
     """Takes a pixel and return a grayscale version.
