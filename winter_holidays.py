@@ -1,5 +1,5 @@
 # Winter Holidays
-# Author: Ubial
+# Author: Donald
 # 8 January 2024
 
 # Requirements:
@@ -38,8 +38,7 @@ def winter_holiday(good_or_bad: str) -> str:
 
 def main() -> None:
     # Runs all the things we want to test in our .py file
-    good_bad = input("Do you want to hear a good or bad event? ")
-    print(winter_holiday(good_bad))
+    print(winter_holiday(input("Do you want to hear a good or bad event? ")))
 
 # If we're running THIS FILE using Python
 if __name__ == "__main__":
