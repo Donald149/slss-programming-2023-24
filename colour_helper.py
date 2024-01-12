@@ -10,6 +10,12 @@ DARK_GRAY_PIXEL = (127, 127, 127)
 LIGHT_GRAY_PIXEL = (128, 128, 128)
 WHITE_PIXEL = (255, 255, 255)
 
+RED_PIXEL = (160, 0, 0)
+GREEN_PIXEL = (0, 160, 0)
+BLUE_PIXEL = (0, 0, 160)
+YELLOW_PIXEL = ()
+
+
 def pixel_to_string(pixel:tuple) -> str:
     """Take a rgb 3-tuple and "interpret it"
     as a colour and return that colour's name
