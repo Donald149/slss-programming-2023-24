@@ -34,6 +34,17 @@ for y in range(img_height):
             red_pixels.append((x, y))
         elif colour_helper.pixel_to_string(current_pixel) == "green":
             green_pixels.append((x, y))
+        else:
+            jelly_bean_img.putpixel((x, y), (0, 0, 0))
+
+jelly_bean_img.save("./Images/coloured_beans_test.jpg")
+
+red_pixel_map = Image.new("RGB", (img_width, img_height))
+for location in red_pixels:
+    red_pixel_map.putpixel(location, colour_helper.RED_PIXEL)
+
+red_pixel_map.save("./Images/red_pixelmap.jpg")
+red_pixel_map.close()
 
 # Count every pixel in the list
 # get the percent
