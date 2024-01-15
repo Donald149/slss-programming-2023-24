@@ -28,6 +28,7 @@ with Image.open("./Images/Red Ball.jpeg") as im:
                 x_value += x
                 y_value += y
             
+    # Average value to determine the "center"         
     average_x = round(x_value / len(red_pixel))
     average_y = round(y_value / len(red_pixel))
 
