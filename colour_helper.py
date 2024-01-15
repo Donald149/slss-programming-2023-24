@@ -39,6 +39,9 @@ def pixel_to_string(pixel:tuple) -> str:
     
     if (r < 100 and g < 100 and b > 120) or (b > g and b > r and b + g + r > 120):
         return "blue"
+    
+    if (r > 200 and g < 80 and b < 80) or (r > g + b + 40 and r + g + b > 180):
+        return "ball red"
 
 def is_light(pixel: tuple) -> bool:
     """Determines if a pixel is light or not. 
